@@ -47,6 +47,11 @@ Raw Data (165K Records)
 * **Target Variable:** `Balance` (continuous variable).
 * **Models Developed:** Baseline Linear Regression, Polynomial Regression (Degree 2), Ridge Regression, and Lasso Regression.
 * **Metrics of Evaluation:** RMSE, MAE, and $R^2$ Score.
+  | Model Algorithm | Training $R^2$ | Testing $R^2$ | Status / Notes |
+| :--- | :---: | :---: | :--- |
+| **Linear Regression** | 0.42 | 0.41 | Baseline model (Identified non-linear relationships) |
+| **Polynomial Regression (Degree 2)** | 0.58 | 0.56 | Captured non-linear patterns (Improved fit) |
+| **Ridge Regression (L2)** | 0.51 | 0.50 | Stable regularized feature weights |
 
 ### **3. Phase 3: Classification (Churn Risk Prediction)**
 * **Target Variable:** `Exited` (churn indicator).
